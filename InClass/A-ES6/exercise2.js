@@ -35,8 +35,9 @@ console.log("The area of this polygon is " + r.area);
 
 //Create 2 new classes that extend from polygon: triangle and circle and log their names and areas
 
-class Triangle {
+class Triangle extends Polygon {
     constructor(height, base) {
+        super();
         this.height = height;
         this.base = base;
         this.name = "Triangle";
